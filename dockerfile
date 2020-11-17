@@ -7,7 +7,7 @@ COPY . .
 #RUN npm i --verbose
 # Если вы создаете сборку для продакшн
 # RUN npm ci --only=production
-
+RUN node test.js
 #EXPOSE 3333
 
 CMD [ "echo", "test" ]
